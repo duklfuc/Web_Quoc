@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bungee&family=Bungee+Inline&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Paytone+One&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rokkitt:ital,wght@0,100..900;1,100..900&family=Rowdies:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bungee&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Paytone+One&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rokkitt:ital,wght@0,100..900;1,100..900&family=Rowdies:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Paytone+One&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rowdies:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rowdies:wght@300;400;700&display=swap');
+:root {
+    --main-text-font:  "Paytone One", sans-serif;
+    --home-text-font: "Bungee Inline", sans-serif;
+    --home2-text-font: "Rokkitt", serif;
+    --logo-text-font: 'Open Sans', sans-serif;
+    --main-coler: #f05123;
+}
+* {
+    margin: 0;
+    padding: o;
+    box-sizing: 0;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+header {
+    width: 99,5vw;
+    height: 270vh;
+    position: relative;
+    background-color: rgb(0, 14, 28);
+}
+.modau {
+    width: 100%;
+    height: 120px;
+    background-color: rgb(6, 33, 46);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+header .modau img {
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+    border-radius: 50%;
+}
+.khoi1 {
+    width: 90%;
+    height: 200px;
+    display: flex;
+}
+a {
+    font-size: 30px;
+    font-family: var(--main-text-font);
+    color: white;
+    display: flex;
+    padding-left: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.modau .khoi2 {
+    width: 100%;
+    background-color: black;
+}
+.khoi2 ul {
+    display: flex;
+    padding-bottom: 10px; 
+    padding-left: 35%;
+}
+.khoi2 ul li {
+    color: white;
+    margin-left: 12px;
+    position: relative;
+    margin: 12px 0 0 12px;
+    cursor: pointer;
+    font-family: var(--main-text-font);
+}
+.khoi2 ul li::after{
+    position: absolute;
+    content: "";
+    display: block;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 0%;
+    background-color: rgb(7, 73, 98);
+    border-radius: 5px;
+    transition: all 0.4s ease;
+}
+.khoi2 ul li:hover::after {
+    width: 100%;
+}
+.user{
+    color: white;
+    margin-left: 1250px;
+    margin-top: -33px;
+}
+.ngonngu {
+    color: white;
+    margin-left: 1120px;
+    margin-top: -28px;
+}
+.search-container {
+    margin-top: -38px;
+    padding-left: 905px;
+    border: none;
+    padding-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 8px;
+    width: 200px;
+    border-radius: 20px; /* Độ cong của góc */
+    cursor: pointer;
+   
+}
+
+button {
+    padding: 8px 20px;
+    background-color: #729ba7;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px; /* Độ cong của góc */
+    cursor: pointer;
+
+}
+
+button:hover {
+    background-color: #4582a0;
+    border-radius: 20px; /* Độ cong của góc */
+    cursor: pointer;
+}
+.row2 {
+    width: 60%;
+    margin-left: 285px;
+}
+.video-container video{
+    width: 100%;
+    height: 40%;
+    border: 10px solid  #4582a0;
+}
+.sale {
+    width: 100%;
+    height: 100%;
+    padding-top:59px;
+}
+.anh1 img{
+    width: 272px;
+    height: 503px;
+    float: left;
+    border: 7px solid  #4582a0;
+}
+.anh2 img{
+    width: 272px;
+    height: 503px;
+    float: right;
+    border: 7px solid  #4582a0;
+}
+.row3 {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+
+.product {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.product-name {
+    font-size: 18px;
+}
+
+.product-price {
+    font-size: 16px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.add-to-cart {
+    background-color: #4c96af;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.add-to-cart:hover {
+    background-color: var(--main-coler);
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+.row3 {
+    display: flex;
+    padding-left: 10px;
+    text-align: center;
+}
+.row3 .smallblock {
+    width: 250px;
+    height: 160px;
+    padding: 20px;
+    margin-bottom: 140px;
+    justify-content: space-between; /* Căn chỉnh các khối ra cách đều nhau */
+}
+
+.row3 .smallblock img {
+    width: 200px; /* Chiều rộng của ảnh */
+    height: 200px; /* Chiều cao của ảnh */
+    object-fit: cover; /* Hiệu ứng object-fit */
+    justify-content:space-between; /* Canh ra các ảnh cách đều nhau */
+    flex: 1; /* Khối chiếm phần bằng nhau trong không gian flex-container */
+    background-color: #ddd;
+    padding: 10px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.row3 .smallblock h3 {
+    font-family: var(--main-text-font);
+    color: #f5ecb3;
+}
+/* CSS cho modal */
+.modal {
+    display: none; /* Ẩn modal ban đầu */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 300px;
+    height: 500px;
+    overflow: auto;
+    background-image: url(/img/slide1.jpg);
+    background-size: cover; /* Đảm bảo ảnh không bị chèn hoặc mất góc */
+    background-position: center; /* Đảm bảo ảnh được căn giữa phần tử chứa */
+    border-radius: 5%;
+    
+}
+
+.modal-content {
+    background-color: #4582a0;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #4582a0;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* nuochoa.css */
+
+.notification {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+}

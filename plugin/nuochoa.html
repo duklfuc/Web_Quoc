@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nuoc Hoa Shop</title>
+    <link rel="stylesheet" href="nuochoa.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="tong">
+        <div class="row1">
+          <div class="modau">
+            <div class="khoi1">
+              <img src="/img/logoshop.png" alt="" />
+              <a href="">CHÀO MỪNG ĐẾN VỚI SHOP NƯỚC HOA TIẾN QUỐC</a>
+            </div>
+            <div class="search-container">
+              <input
+                type="text"
+                id="searchInput"
+                placeholder="Nhập từ khóa..."
+              />
+              <button onclick="searchFunction()">Tìm kiếm</button>
+            </div>
+            <div id="searchResults"></div>
+            <div class="khoi2">
+              <ul>
+                <li>Trang chủ</li>
+                <li id="cart">Giỏ hàng</li>
+                <li>Thương hiệu</li>
+                <li>Blog</li>
+                <li>Liên hệ</li>
+              </ul>
+            </div>
+            <div class="user">
+              <span class="material-symbols-outlined"> account_circle </span>
+            </div>
+            <div class="ngonngu">
+              <span
+                class="material-symbols-outlined"
+                onclick="toggleLanguage()"
+              >
+                globe_asia
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="sale">
+          <div class="anh1">
+            <img src="/img/sale.png" alt="" />
+          </div>
+          <div class="anh2">
+            <img src="/img/sale.png" alt="" />
+          </div>
+        </div>
+        <div class="row2">
+          <div class="video-container">
+            <video autoplay loop muted>
+              <source src="/img/videonen.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+        <div class="row3">
+          <div class="smallblock">
+            <img src="/img/Nuochoa1.jpg" alt="" />
+            <h3 class="product-name">Nước hoa 1</h3>
+            <p class="product-price">Giá: $50</p>
+            <button class="add-to-cart" onclick="addToCart('Nước hoa 1', 50)">
+              Thêm vào giỏ hàng
+            </button>
+          </div>
+          <div class="smallblock">
+            <img src="/img/Nuochoa2.jpg" alt="" />
+            <h3 class="product-name">Nước hoa 2</h3>
+            <p class="product-price">Giá: $220</p>
+            <button class="add-to-cart" onclick="addToCart('Nước hoa 2', 220)">
+              Thêm vào giỏ hàng
+            </button>
+          </div>
+          <div class="smallblock">
+            <img src="/img/Nuochoa3.jpg" alt="" />
+            <h3 class="product-name">Nước hoa 3</h3>
+            <p class="product-price">Giá: $50</p>
+            <button class="add-to-cart" onclick="addToCart('Nước hoa 3', 50)">
+              Thêm vào giỏ hàng
+            </button>
+          </div>
+          <div class="smallblock">
+            <img src="/img/Nuochoa4.jpg" alt="" />
+            <h3 class="product-name">Nước hoa 4</h3>
+            <p class="product-price">Giá: $75</p>
+            <button class="add-to-cart" onclick="addToCart('Nước hoa 4', 75)">
+              Thêm vào giỏ hàng
+            </button>
+          </div>
+          <div class="smallblock">
+            <img src="/img/Nuochoa5.jpg" alt="" />
+            <h3 class="product-name">Nước hoa 5</h3>
+            <p class="product-price">Giá: $120</p>
+            <button class="add-to-cart" onclick="addToCart('Nước hoa 5', 120)">
+              Thêm vào giỏ hàng
+            </button>
+          </div>
+          <div class="smallblock">
+            <img src="/img/Nuochoa6.jpg" alt="" />
+            <h3 class="product-name">Nước hoa 6</h3>
+            <p class="product-price">Giá: $50</p>
+            <button class="add-to-cart" onclick="addToCart('Nước hoa 6', 50)">
+              Thêm vào giỏ hàng
+            </button>
+          </div>
+          <div class="smallblock">
+            <img src="/img/Nuochoa7.jpg" alt="" />
+            <h3 class="product-name">Nước hoa 7</h3>
+            <p class="product-price">Giá: $60</p>
+            <button class="add-to-cart" onclick="addToCart('Nước hoa 7', 60)">
+              Thêm vào giỏ hàng
+            </button>
+          </div>
+          <div class="smallblock">
+            <img src="/img/Nuochoa8.jpg" alt="" />
+            <h3 class="product-name">Nước hoa 8</h3>
+            <p class="product-price">Giá: $50</p>
+            <button class="add-to-cart" onclick="addToCart('Nước hoa 8', 50)">
+              Thêm vào giỏ hàng
+            </button>
+          </div>
+          <div class="smallblock">
+            <img src="/img/Nuochoa9.jpg" alt="" />
+            <h3 class="product-name">Nước hoa 9</h3>
+            <p class="product-price">Giá: $70</p>
+            <button class="add-to-cart" onclick="addToCart('Nước hoa 9', 70)">
+              Thêm vào giỏ hàng
+            </button>
+          </div>
+          <div class="smallblock">
+            <img src="/img/Nuochoa10.jpg" alt="" />
+            <h3 class="product-name">Nước hoa 10</h3>
+            <p class="product-price">Giá: $50</p>
+            <button class="add-to-cart" onclick="addToCart('Nước hoa 1', 50)">
+              Thêm vào giỏ hàng
+            </button>
+          </div>
+          <div class="smallblock">
+            <img src="/img/Nuochoa11.jpg" alt="" />
+            <h3 class="product-name">Nước hoa 11</h3>
+            <p class="product-price">Giá: $320</p>
+            <button class="add-to-cart" onclick="addToCart('Nước hoa 11', 320)">
+              Thêm vào giỏ hàng
+            </button>
+          </div>
+          <div class="smallblock">
+            <img src="/img/Nuochoa12.jpg" alt="" />
+            <h3 class="product-name">Nước hoa 12</h3>
+            <p class="product-price">Giá: $100</p>
+            <button class="add-to-cart" onclick="addToCart('Nước hoa 12', 100)">
+              Thêm vào giỏ hàng
+            </button>
+          </div>
+          <div class="smallblock">
+            <img src="/img/nuochoa13.jpg" alt="" />
+            <h3 class="product-name">Nước hoa 13</h3>
+            <p class="product-price">Giá: $80</p>
+            <button class="add-to-cart" onclick="addToCart('Nước hoa 13', 80)">
+              Thêm vào giỏ hàng
+            </button>
+          </div>
+          <div class="smallblock">
+            <img src="/img/nuochoa14.jpg" alt="" />
+            <h3 class="product-name">Nước hoa 14</h3>
+            <p class="product-price">Giá: $90</p>
+            <button class="add-to-cart" onclick="addToCart('Nước hoa 14', 90)">
+              Thêm vào giỏ hàng
+            </button>
+          </div>
+          <div class="smallblock">
+            <img src="/img/nuochoa15.jpg" alt="" />
+            <h3 class="product-name">Nước hoa 15</h3>
+            <p class="product-price">Giá: $50</p>
+            <button class="add-to-cart" onclick="addToCart('Nước hoa 15', 50)">
+              Thêm vào giỏ hàng
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Giỏ hàng</h2>
+          <ul id="cartList">
+            <li>
+              <!-- Hiển thị tên và giá của sản phẩm -->
+              <span class="product-info">${item.name} - $${item.price}</span>
+              <!-- Nút xóa bỏ với sự kiện onclick -->
+              <button onclick="removeFromCart($cartList)">Xóa</button>
+            </li>
+          </ul>
+          <button id="placeOrderButton">Đặt hàng</button>
+        </div>
+      </div>
+    </header>
+    <script src="nuochoa.js"></script>
+  </body>
+</html>
